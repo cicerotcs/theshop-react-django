@@ -1,0 +1,27 @@
+.order__info {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+
+  margin-top: 3rem;
+
+  p {
+    color: #737373;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  span {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: right;
+  }
+
+  .order__info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.6rem;
+
+    border-bottom: 1px solid var(--secondary-color);
+  }
+}

@@ -1,0 +1,113 @@
+.checkout {
+  display: flex;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  .checkout__cart,
+  .checkout__features {
+    margin-top: 3rem;
+  }
+
+  .checkout__cart {
+    width: 70%;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+
+    @media (min-width: 320px) and (max-width: 480px) {
+      padding: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+
+  .checkout__features {
+    width: 25%;
+    margin-left: 2rem;
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+      margin: 1rem 0 0 0;
+    }
+
+    .checkout__features-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p,
+      span {
+        margin-top: 1rem;
+        font-weight: 700;
+        font-size: 22;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      text-transform: uppercase;
+      font-size: 16px;
+      background-color: var(--primary-color);
+      border: 0;
+      outline: none;
+      color: var(--white-color);
+      cursor: pointer;
+      margin-top: 1.5rem;
+    }
+
+    .checkout__features-subtotal {
+      padding: 1rem;
+      background-color: var(--secondary-color);
+    }
+
+    .checkout__features-products {
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        flex-wrap: nowrap;
+      }
+
+      @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+      }
+
+      .features-product {
+        background-color: var(--secondary-color);
+        padding: 0.8rem;
+        width: 47%;
+        text-align: center;
+        margin: 0.3rem;
+        cursor: pointer;
+
+        @media (min-width: 1025px) and (max-width: 1447px) {
+          width: 45%;
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: contain;
+
+          @media (min-width: 1025px) and (max-width: 1447px) {
+            width: 80px;
+          }
+        }
+        p {
+          font-weight: 700;
+          font-size: 14px;
+          margin: 0.4rem 0;
+        }
+        span {
+          font-weight: 700;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+}

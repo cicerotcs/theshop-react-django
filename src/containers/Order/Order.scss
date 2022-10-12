@@ -1,0 +1,50 @@
+.order {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 100vh;
+
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  input {
+    margin: 0.6rem 0;
+    width: 100%;
+    padding: 0.7rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0.8rem 0;
+  }
+
+  .order__details {
+    width: 60%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    .order__contactInfo {
+      margin-top: 2rem;
+
+      p {
+        font-size: 14px;
+      }
+      a {
+        text-decoration: none;
+        color: var(--primary-color);
+      }
+    }
+  }
+}

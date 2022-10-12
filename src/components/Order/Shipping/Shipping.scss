@@ -1,0 +1,32 @@
+.shipping__order {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 100vh;
+
+  display: flex;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  .shipping__order-details {
+    width: 60%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  .order__shippingMethod {
+    margin-top: 2rem;
+    .order__shippingMethod-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      border: 1px solid var(--secondary-color);
+      padding: 1rem;
+      border-radius: 5px;
+    }
+  }
+}

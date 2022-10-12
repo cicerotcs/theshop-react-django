@@ -1,0 +1,112 @@
+.order__summary {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+
+  .danger {
+    background-color: rgba(125, 48, 48, 0.966);
+  }
+  .success {
+    background-color: rgb(32, 87, 32);
+  }
+
+  .order__summary-shipping-status,
+  .order__summary-payment-status {
+    padding: 0.8rem;
+    border: 1px solid var(--secondary-color);
+    color: var(--white-color);
+    width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  span {
+    font-weight: 600;
+  }
+  p {
+    margin: 0.7rem 0;
+  }
+  .order__summary-details {
+    width: 60%;
+    margin-top: 3rem;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 500;
+
+      @media screen and (max-width: 768px) {
+        font-size: 28px;
+      }
+    }
+
+    .order__summary-shipping {
+      margin-top: 2rem;
+    }
+
+    .order__summary-items {
+      width: 100%;
+
+      .order__summary-items-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.7rem;
+        @media screen and (max-width: 1000px) {
+          flex-wrap: wrap;
+        }
+        div {
+          display: flex;
+          width: 350px;
+          img {
+            width: 50px;
+            height: auto;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+  .order__summary-expenses {
+    width: 40%;
+    margin-top: 3rem;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+
+    .order__summary-expenses-box {
+      padding: 1rem;
+      background-color: var(--secondary-color);
+      margin-top: 1rem;
+    }
+
+    .order__summary-expenses-details {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      border-bottom: 1px solid var(--white-color);
+    }
+  }
+}

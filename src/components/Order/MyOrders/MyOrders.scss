@@ -1,0 +1,22 @@
+.profile__orders {
+  margin-top: 3rem;
+
+  svg {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  .profile__orders-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
